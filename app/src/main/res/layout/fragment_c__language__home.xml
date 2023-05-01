@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home.cLanguage.C_Language_Home"
+    android:orientation="vertical"
+    android:background="@color/black"
+    android:padding="10dp">
+    <ImageView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cbanner"/>
+    <TextView
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="C Language"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="30dp"/>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/C_Language_StartLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FEF2D4"
+        android:layout_margin="30dp">
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Start Learning"
+            android:textSize="25sp"
+            android:textColor="#005277"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/C_Language_TestYourself"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FEF2D4"
+        android:layout_margin="30dp">
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Test Yourself"
+            android:textSize="25sp"
+            android:textColor="#005277"/>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/C_Language_PracticeCoding"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:backgroundTint="#FEF2D4"
+        android:layout_margin="30dp">
+        <TextView
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Practice Coding"
+            android:textSize="25sp"
+            android:textColor="#005277"/>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

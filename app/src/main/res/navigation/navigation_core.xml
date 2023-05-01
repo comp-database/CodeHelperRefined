@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_core"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="learn.atharv.codehelperrefined.Home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_c_Language_Host"
+            app:destination="@id/c_Language_Host"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+    </fragment>
+    <fragment
+        android:id="@+id/mentorFragment"
+        android:name="learn.atharv.codehelperrefined.Mentor.MentorFragment"
+        android:label="fragment_mentor"
+        tools:layout="@layout/fragment_mentor" >
+        <action
+            android:id="@+id/action_mentorFragment_to_mentorHost"
+            app:destination="@id/mentorHost"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/action_mentorFragment_to_mentorAnswer"
+            app:destination="@id/mentorAnswer" />
+    </fragment>
+    <fragment
+        android:id="@+id/discussionFragment"
+        android:name="learn.atharv.codehelperrefined.Discussion.DiscussionFragment"
+        android:label="fragment_discussion"
+        tools:layout="@layout/fragment_discussion" />
+    <activity
+        android:id="@+id/c_Language_Host"
+        android:name="learn.atharv.codehelperrefined.Home.cLanguage.C_Language_Host"
+        android:label="activity_clanguage_host"
+        tools:layout="@layout/activity_clanguage_host" />
+    <fragment
+        android:id="@+id/logoutBottomSheet"
+        android:name="learn.atharv.codehelperrefined.Home.LogoutBottomSheet"
+        android:label="fragment_logout_bottom_sheet"
+        tools:layout="@layout/fragment_logout_bottom_sheet" />
+    <activity
+        android:id="@+id/mentorHost"
+        android:name="learn.atharv.codehelperrefined.Mentor.MentorHost"
+        android:label="activity_mentor_host"
+        tools:layout="@layout/activity_mentor_host" >
+    </activity>
+    <fragment
+        android:id="@+id/mentorAnswer"
+        android:name="learn.atharv.codehelperrefined.Mentor.MentorAnswer"
+        android:label="fragment_mentor_answer"
+        tools:layout="@layout/fragment_mentor_answer" />
+</navigation>

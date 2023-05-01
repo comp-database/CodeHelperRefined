@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/c_navigation"
+    app:startDestination="@id/c_Language_Home">
+
+    <fragment
+        android:id="@+id/c_Language_Home"
+        android:name="learn.atharv.codehelperrefined.Home.cLanguage.C_Language_Home"
+        android:label="fragment_c__language__home"
+        tools:layout="@layout/fragment_c__language__home" >
+        <action
+            android:id="@+id/action_c_Language_Home_to_c_Language_Learning"
+            app:destination="@id/c_Language_Learning"
+            app:enterAnim="@android:anim/fade_in" />
+        <action
+            android:id="@+id/action_c_Language_Home_to_c_Language_Quiz"
+            app:destination="@id/c_Language_Quiz" />
+    </fragment>
+    <fragment
+        android:id="@+id/c_Language_Learning"
+        android:name="learn.atharv.codehelperrefined.Home.cLanguage.C_Language_Learning"
+        android:label="fragment_c__language__learning_list"
+        tools:layout="@layout/fragment_c__language__learning_list" >
+        <action
+            android:id="@+id/action_c_Language_Learning_to_c_Language_Details"
+            app:destination="@id/c_Language_Details" />
+    </fragment>
+    <fragment
+        android:id="@+id/c_Language_Details"
+        android:name="learn.atharv.codehelperrefined.Home.cLanguage.C_Language_Details"
+        android:label="fragment_c__language__details"
+        tools:layout="@layout/fragment_c__language__details" >
+        <argument
+            android:name="title"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+        <argument
+            android:name="data"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="null" />
+    </fragment>
+    <fragment
+        android:id="@+id/c_Language_Quiz"
+        android:name="learn.atharv.codehelperrefined.Home.cLanguage.C_Language_Quiz"
+        android:label="fragment_c__language__quiz"
+        tools:layout="@layout/fragment_c__language__quiz" >
+        <action
+            android:id="@+id/action_c_Language_Quiz_to_c_Language_Quiz_Result"
+            app:destination="@id/c_Language_Quiz_Result" />
+    </fragment>
+    <fragment
+        android:id="@+id/c_Language_Quiz_Result"
+        android:name="learn.atharv.codehelperrefined.Home.cLanguage.C_Language_Quiz_Result"
+        android:label="fragment_c__language__quiz__result"
+        tools:layout="@layout/fragment_c__language__quiz__result" />
+</navigation>

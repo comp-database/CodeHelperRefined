@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CodeHelperRefined"
+        tools:targetApi="31">
+        <activity
+            android:name=".MentorSideApp.DoubtDetails"
+            android:exported="false" />
+        <activity
+            android:name=".MentorSideApp.MentorSideStartPage"
+            android:exported="false" />
+        <activity
+            android:name=".Mentor.MentorHost"
+            android:exported="false" />
+        <activity
+            android:name=".Home.cLanguage.C_Language_Host"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationStart"
+            android:exported="false"
+            android:label="@string/title_activity_navigation_start" />
+        <activity
+            android:name=".StartPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndSignup.RegisterPage"
+            android:exported="false" />
+        <activity
+            android:name=".LoginAndSignup.LoginPage"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

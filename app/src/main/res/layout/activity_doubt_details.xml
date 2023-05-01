@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:padding="8dp"
+    tools:context=".MentorSideApp.DoubtDetails">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp">
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:text= "Name of Student:"
+            android:textSize="20sp" />
+            <TextView
+            android:id="@+id/Name"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:text="Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Email of Student:"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/Email"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Doubt of Student:"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/Doubt"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:text="Doubt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Answer Stdudents Doubt Below:"
+                android:textSize="20sp"/>
+            <EditText
+                android:padding="8dp"
+                android:inputType="textMultiLine"
+                android:hint="Answer"
+                android:id="@+id/Answer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:lines="4"
+                android:background="@drawable/rectbox"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/sendAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Answer"/>
+        <Button
+            android:id="@+id/callStudent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Call Student"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

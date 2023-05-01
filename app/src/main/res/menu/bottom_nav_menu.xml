@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/mentorFragment"
+        android:icon="@drawable/icons8_teacher_50"
+        android:title="Mentor Support" />
+
+    <item
+        android:id="@+id/homeFragment"
+        android:icon="@drawable/icons8_home_48"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/discussionFragment"
+        android:icon="@drawable/icons8_discussion_66"
+        android:title="Discuss"
+        />
+</menu>

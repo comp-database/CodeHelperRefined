@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:padding="8dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:text= "Name of Student:"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/Name"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Name"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Email of Student:"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/Email"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Prog. Language of Student:"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/lang"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Language"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Doubt of Student:"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/Doubt"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Doubt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text= "Phone No. of Student:"
+                android:textSize="20sp"
+                android:layout_weight="1"/>
+            <TextView
+                android:id="@+id/Phone"
+                android:textSize="20sp"
+                android:layout_weight="1"
+                android:textColor="@color/black"
+                android:text="Phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <Button
+            android:id="@+id/Submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Details"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
